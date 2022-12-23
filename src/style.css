@@ -1,7 +1,8 @@
-span {
+ul {
   display: block;
   text-align: right;
   color: #004445;
+  list-style-type: none;
 }
 body {
   background: #f8b400;
@@ -11,9 +12,6 @@ body {
   max-width: 960px;
 }
 
-#currentDay {
-  margin-top: 15px;
-}
 #searchedCity,
 #currentTemperature,
 #humidity {
@@ -57,31 +55,31 @@ body {
 .forecast {
   color: #faf5e4;
   margin-top: 20px;
-  margin-left: -12px;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
   text-align: left;
 }
-.row {
+
+.card-title {
   font-family: "Quicksand", sans-serif;
-  font-weight: 100;
-  font-size: small;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+#forecastNextWeek {
+  color: #004445;
   text-align: center;
 }
 
-div,
-h5,
-h6 {
-  font-size: 13px;
-  color: #004445;
+.card-subtitle {
+  color: #004445 !important;
 }
-.col {
-  padding: 10px;
-  margin: 10px;
-}
+
 .fa-solid {
   color: #004445;
+  font-size: 13px;
 }
+
 hr {
   color: #faf5e4;
 }
