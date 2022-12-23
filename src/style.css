@@ -27,6 +27,7 @@ body {
   margin-top: 10px;
   font-weight: 600;
   font-size: 30px;
+  text-shadow: 1px 1px 2px #004445;
 }
 .searchbar {
   margin: 30px;
@@ -37,21 +38,30 @@ body {
 #searchButton {
   border-radius: 10px;
   background-color: #faf5e4;
-  color: #2c786c;
+  border-color: #faf5e4;
   box-shadow: 2px 2px 2px #004445;
+  color: #004445;
   font-family: "Quicksand", sans-serif;
-  border: grey;
   padding: 5px 8px;
 }
+#searchButton:hover {
+  background-color: #004445;
+  color: #faf5e4;
+}
 .locationButton {
-  border-radius: 10px;
-  background-color: #faf5e4;
-  border: grey;
+  border-radius: 7px;
+  background-color: transparent;
+  border-color: #faf5e4;
   box-shadow: 2px 2px 2px #004445;
-  color: #2c786c;
+  color: #faf5e4;
   font-family: "Quicksand", sans-serif;
   margin-top: 15px;
+  margin-bottom: 30px;
   padding: 5px 8px;
+}
+.locationButton:hover {
+  background-color: #004445;
+  color: #faf5e4;
 }
 
 .forecast {
@@ -83,6 +93,14 @@ body {
 
 hr {
   color: #faf5e4;
+}
+
+a {
+  color: #faf5e4;
+  display: block;
+  font-size: small;
+  text-align: center;
+  text-decoration: none;
 }
 
 /*https://palettes.shecodes.io/palettes/545
