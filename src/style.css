@@ -30,7 +30,7 @@ body {
   font-size: 30px;
 }
 .searchbar {
-  text-align: center;
+  text-align: left;
   border-radius: 10px;
 }
 #searchButton {
@@ -43,22 +43,24 @@ body {
   padding: 5px 8px;
 }
 .locationButton {
-  float: right;
-  margin-top: 15px;
   border-radius: 10px;
   background-color: #faf5e4;
-  color: grey;
-  box-shadow: 2px 2px 2px #2c786c;
-  font-family: "Quicksand", sans-serif;
   border: grey;
+  box-shadow: 2px 2px 2px #2c786c;
+  color: grey;
+  float: right;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
   padding: 5px 8px;
 }
 
 .forecast {
   color: #faf5e4;
   margin-top: 20px;
+  margin-left: -12px;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
+  text-align: left;
 }
 .row {
   font-family: "Quicksand", sans-serif;
