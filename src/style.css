@@ -1,8 +1,10 @@
 ul {
   display: block;
   text-align: right;
-  color: #004445;
+  color: #faf5e4;
+  text-shadow: 1px 1px 2px #004445;
   list-style-type: none;
+  margin-top: 10px;
 }
 body {
   background: hsl(44, 100%, 49%);
@@ -15,7 +17,7 @@ body {
 #searchedCity,
 #currentTemperature,
 #humidity {
-  text-align: left;
+  text-align: right;
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
   line-height: 1.3;
@@ -29,6 +31,7 @@ body {
   font-weight: 600;
   font-size: 30px;
   text-shadow: 1px 1px 2px #004445;
+  text-align: center;
 }
 .searchbar {
   margin: 30px;
@@ -56,11 +59,12 @@ body {
   box-shadow: 2px 2px 2px #004445;
   color: #faf5e4;
   font-family: "Quicksand", sans-serif;
-
   margin-top: 15px;
   margin-bottom: 30px;
   padding: 5px 8px;
   text-shadow: 1px 1px 2px #004445;
+  display: block;
+  margin-left: auto;
 }
 .locationButton:hover {
   background-color: #004445;
