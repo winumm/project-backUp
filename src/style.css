@@ -99,12 +99,16 @@ hr {
   color: #faf5e4;
 }
 
+.credits,
 a {
   color: #004445;
   display: block;
-  font-size: small;
+  font-size: 12px;
   text-align: center;
   text-decoration: none;
+}
+a {
+  display: inline;
 }
 
 /*https://palettes.shecodes.io/palettes/545
