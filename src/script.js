@@ -31,14 +31,14 @@ let time = now.getHours();
 let minutes = now.getMinutes();
 
 //<span> display current day, current date and Month, hours and minutes
-let showToday = document.querySelector("#currentDay");
-showToday.innerHTML = days[today];
+/*let showToday = document.querySelector("#currentDay");
+showToday.innerHTML = days[today];*/
 
 let showDateAndMonth = document.querySelector("#currentDate");
 showDateAndMonth.innerHTML = `${currentDate} ${months[currentMonth]} `;
 
 let showHoursandMinutes = document.querySelector("#currentTime");
-showHoursandMinutes.innerHTML = `${time}h ${minutes}m`;
+showHoursandMinutes.innerHTML = `${days[today]} ${time}:${minutes}`;
 
 //Gets temperature and City name
 
