@@ -32,124 +32,126 @@
   </head>
   <body>
     <div class="container">
-      <h1 id="searchedCity"></h1>
+      <div class="weatherApp">
+        <h1 id="searchedCity">Paris</h1>
 
-      <div class="row">
-        <div class="col-6">
-          <button type="button" class="btn btn-light locationButton">
-            <i class="fa-solid fa-map-pin"></i>
-          </button>
-          <h2 id="currentTemperature">
-            <i class="fa-solid fa-cloud-bolt"></i> 10°C
-          </h2>
+        <div class="row">
+          <div class="col-6">
+            <button type="button" class="btn btn-light locationButton">
+              <i class="fa-solid fa-map-pin"></i>
+            </button>
+            <h2 id="currentTemperature">
+              <i class="fa-solid fa-cloud-bolt"></i> 10°C
+            </h2>
 
-          <h3 id="humidity">
-            <i class="fa-sharp fa-solid fa-droplet"></i> 2 mm
-          </h3>
-          <ul>
-            <li id="currentDay"></li>
-            <li id="currentDate">Date and month</li>
-            <li id="currentTime">Time 00:00</li>
-          </ul>
+            <h3 id="humidity">
+              <i class="fa-sharp fa-solid fa-droplet"></i> 2 mm
+            </h3>
+            <ul>
+              <li id="currentDay"></li>
+              <li id="currentDate">Date and month</li>
+              <li id="currentTime">Time 00:00</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <form id="search-form" class="searchbar">
+              <input type="text" id="searchBar" placeholder="search for city" />
+            </form>
+          </div>
+          <div class="col-2">
+            <form id="search-form" class="searchbar">
+              <input type="submit" id="searchButton" value="Search" />
+            </form>
+          </div>
         </div>
-        <div class="col-4">
-          <form id="search-form" class="searchbar">
-            <input type="text" id="searchBar" placeholder="search for city" />
-          </form>
+
+        <p class="forecast">Coming up this Week</p>
+
+        <div class="row" id="forecastNextWeek">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Mon</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="fa-solid fa-sun"></i>
+                  10°C
+                </h6>
+                <p class="card-text">
+                  <i class="fa-sharp fa-solid fa-droplet"></i>
+                  2 mm
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Tue</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="fa-solid fa-sun"></i>
+                  10°C
+                </h6>
+                <p class="card-text">
+                  <i class="fa-sharp fa-solid fa-droplet"></i>
+                  2 mm
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Wed</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="fa-solid fa-sun"></i>
+                  10°C
+                </h6>
+                <p class="card-text">
+                  <i class="fa-sharp fa-solid fa-droplet"></i>
+                  2 mm
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Thu</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="fa-solid fa-sun"></i>
+                  10°C
+                </h6>
+                <p class="card-text">
+                  <i class="fa-sharp fa-solid fa-droplet"></i>
+                  2 mm
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Fri</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="fa-solid fa-sun"></i>
+                  10°C
+                </h6>
+                <p class="card-text">
+                  <i class="fa-sharp fa-solid fa-droplet"></i>
+                  2 mm
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-2">
-          <form id="search-form" class="searchbar">
-            <input type="submit" id="searchButton" value="Search" />
-          </form>
-        </div>
+        <hr />
+        <p class="credits">
+          This project was coded by Malin Winum 🔁
+          <a href="https://github.com/winumm/project-backUp" target="_blank"
+            >Github</a
+          >
+        </p>
       </div>
-      <hr />
-      <p class="forecast">Coming up this Week</p>
-
-      <div class="row" id="forecastNextWeek">
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Mon</h5>
-              <h6 class="card-subtitle mb-2 text-muted">
-                <i class="fa-solid fa-sun"></i>
-                10°C
-              </h6>
-              <p class="card-text">
-                <i class="fa-sharp fa-solid fa-droplet"></i>
-                2 mm
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Tue</h5>
-              <h6 class="card-subtitle mb-2 text-muted">
-                <i class="fa-solid fa-sun"></i>
-                10°C
-              </h6>
-              <p class="card-text">
-                <i class="fa-sharp fa-solid fa-droplet"></i>
-                2 mm
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Wed</h5>
-              <h6 class="card-subtitle mb-2 text-muted">
-                <i class="fa-solid fa-sun"></i>
-                10°C
-              </h6>
-              <p class="card-text">
-                <i class="fa-sharp fa-solid fa-droplet"></i>
-                2 mm
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Thu</h5>
-              <h6 class="card-subtitle mb-2 text-muted">
-                <i class="fa-solid fa-sun"></i>
-                10°C
-              </h6>
-              <p class="card-text">
-                <i class="fa-sharp fa-solid fa-droplet"></i>
-                2 mm
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Fri</h5>
-              <h6 class="card-subtitle mb-2 text-muted">
-                <i class="fa-solid fa-sun"></i>
-                10°C
-              </h6>
-              <p class="card-text">
-                <i class="fa-sharp fa-solid fa-droplet"></i>
-                2 mm
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <p class="credits">
-        This project was coded by Malin Winum 🔁
-        <a href="https://github.com/winumm/project-backUp" target="_blank"
-          >Github</a
-        >
-      </p>
     </div>
     <script src="src/script.js"></script>
   </body>
