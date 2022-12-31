@@ -34,34 +34,45 @@
     <div class="container">
       <div class="weatherApp">
         <h1 id="searchedCity">Paris</h1>
+        <br />
+
+        <form class="d-flex" role="search" id="search">
+          <input
+            class="form-control me-2 search-form"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            id="search-input"
+          />
+
+          <button type="submit" class="btn btn-light search-form searchButton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <button type="button" class="btn btn-light locationButton">
+            <i class="fa-solid fa-map-pin"></i>
+          </button>
+        </form>
+
+        <br />
 
         <div class="row">
           <div class="col-6">
-            <button type="button" class="btn btn-light locationButton">
-              <i class="fa-solid fa-map-pin"></i>
-            </button>
-            <h2 id="currentTemperature">
-              <i class="fa-solid fa-cloud-bolt"></i> 10°C
-            </h2>
+            <div class="clearfix">
+              <h2 id="currentTemperature">
+                <i class="fa-solid fa-cloud-bolt"></i> 10
+                <span class="units">°C <a href="#">°F</a></span>
+              </h2>
 
-            <h3 id="humidity">
-              <i class="fa-sharp fa-solid fa-droplet"></i> 2 mm
-            </h3>
-            <ul>
-              <li id="currentDay"></li>
-              <li id="currentDate">Date and month</li>
-              <li id="currentTime">Time 00:00</li>
-            </ul>
-          </div>
-          <div class="col-4">
-            <form id="search-form" class="searchbar">
-              <input type="text" id="searchBar" placeholder="search for city" />
-            </form>
-          </div>
-          <div class="col-2">
-            <form id="search-form" class="searchbar">
-              <input type="submit" id="searchButton" value="Search" />
-            </form>
+              <h3 id="humidity">
+                <i class="fa-sharp fa-solid fa-droplet"></i> 2 mm
+              </h3>
+              <ul>
+                <li id="currentDay"></li>
+                <li id="currentDate"></li>
+                <li id="currentTime"></li>
+              </ul>
+            </div>
           </div>
         </div>
 
