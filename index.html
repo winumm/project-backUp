@@ -33,12 +33,12 @@
   <body>
     <div class="container">
       <div class="weatherApp">
-        <h1 id="searchedCity">Paris</h1>
+        <h1 id="searchedCity"></h1>
         <br />
 
         <form class="d-flex" role="search" id="search">
           <input
-            class="form-control me-2 search-form"
+            class="form-control me-2"
             type="search"
             placeholder="Search"
             aria-label="Search"
@@ -48,7 +48,6 @@
           <button type="submit" class="btn btn-light search-form searchButton">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
-
           <button type="button" class="btn btn-light locationButton">
             <i class="fa-solid fa-map-pin"></i>
           </button>
@@ -60,7 +59,8 @@
           <div class="col-6">
             <div class="clearfix">
               <h2 id="currentTemperature">
-                <i class="fa-solid fa-cloud-bolt"></i> 10
+                <i class="fa-solid fa-cloud-bolt"></i>
+                <span id="temperature"></span>
                 <span class="units">°C <a href="#">°F</a></span>
               </h2>
 
@@ -71,6 +71,8 @@
                 <li id="currentDay"></li>
                 <li id="currentDate"></li>
                 <li id="currentTime"></li>
+                <li id="discription"></li>
+                <li id="windSpeed">ms</li>
               </ul>
             </div>
           </div>

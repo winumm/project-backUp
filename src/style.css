@@ -53,7 +53,7 @@ body {
   width: 41px;
 }
 
-.searchButton,
+.searchButton:hover,
 .locationButton:hover {
   background-color: #004445 !important;
   color: #faf5e4 !important;
