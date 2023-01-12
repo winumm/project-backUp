@@ -11,11 +11,14 @@ ul {
   color: #faf5e4;
   font-size: 13px;
   text-shadow: 1px 1px 2px #004445;
-  line-height: 19px;
+
   list-style-type: none;
   margin-top: 10px;
   margin: 0;
-  padding: 0;
+  padding: 10px 10px 30px 0;
+}
+li {
+  padding-bottom: 3px;
 }
 body {
   background: hsl(44, 100%, 49%);
@@ -39,10 +42,11 @@ body {
 #searchedCity {
   position: relative;
   margin-top: 10px;
+  margin-bottom: 15px;
   font-weight: 600;
   font-size: 30px;
   line-height: 28px;
-  text-align: center;
+  text-align: left;
 }
 .searchButton,
 .locationButton {
