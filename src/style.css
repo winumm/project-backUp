@@ -43,6 +43,10 @@ li {
   padding-bottom: 3px;
 }
 
+#icon {
+  font-size: xx-small;
+}
+
 #searchedCity,
 #currentTemperature,
 #currentHumidity {
