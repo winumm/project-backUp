@@ -64,7 +64,6 @@ function showTemperatureAndCity(response) {
   weatherCondition.innerHTML = response.data.weather[0].description;
   let windElement = document.querySelector("#windSpeed");
   windElement.innerHTML = Math.round(response.data.wind.speed);
-  console.log(response.data);
 }
 
 function whereAmI(position) {
