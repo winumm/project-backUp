@@ -35,10 +35,10 @@ let minutes = now.getMinutes();
 showToday.innerHTML = days[today];*/
 
 let showDateAndMonth = document.querySelector("#currentDate");
-showDateAndMonth.innerHTML = `${currentDate} ${months[currentMonth]} `;
+showDateAndMonth.innerHTML = ` ${days[today]} ${currentDate} ${months[currentMonth]} `;
 
 let showHoursandMinutes = document.querySelector("#currentTime");
-showHoursandMinutes.innerHTML = `${days[today]} ${time}:${minutes}`;
+showHoursandMinutes.innerHTML = ` ${time}:${minutes}`;
 
 //Gets temperature and City name
 let apiKey = "8e2e3939a15348b12d5c315bd6ba15f3";
@@ -58,11 +58,13 @@ function showTemperatureAndCity(response) {
   cityElement.innerHTML = response.data.name;
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = response.data.main.humidity;
   let weatherCondition = document.querySelector("#discription");
   weatherCondition.innerHTML = response.data.weather[0].description;
   let windElement = document.querySelector("#windSpeed");
-  windElement.innerHTML = response.data.wind.speed;
-  console.log(response.data.wind.speed);
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  console.log(response.data);
 }
 
 function whereAmI(position) {

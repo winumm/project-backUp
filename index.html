@@ -61,18 +61,28 @@
               <h2 id="currentTemperature">
                 <i class="fa-solid fa-cloud-bolt"></i>
                 <span id="temperature"></span>
-                <span class="units">°C <a href="#">°F</a></span>
+                <span class="units">°C /<a href="#">°F</a></span>
               </h2>
 
-              <h3 id="humidity">
-                <i class="fa-sharp fa-solid fa-droplet"></i> 2 mm
+              <h3 id="currentHumidity">
+                <i class="fa-sharp fa-solid fa-droplet"></i>
+                <span id="humidity"></span>% Humidity
               </h3>
               <ul>
-                <li id="currentDay"></li>
-                <li id="currentDate"></li>
-                <li id="currentTime"></li>
-                <li id="discription"></li>
-                <li id="windSpeed">ms</li>
+                <li>It looks like: <span id="discription"></span></li>
+                <li>
+                  <i class="fa-solid fa-wind"></i
+                  ><span id="windSpeed"> Km/h</span>
+                </li>
+
+                <li>
+                  <i class="fa-regular fa-calendar-days"></i
+                  ><span id="currentDate"></span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-clock"></i
+                  ><span id="currentTime"></span>
+                </li>
               </ul>
             </div>
           </div>
