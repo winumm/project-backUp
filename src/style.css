@@ -91,10 +91,10 @@ li {
   font-weight: 500;
   font-size: 1.1rem;
 }
-h5 {
+.weekday {
   opacity: 0.8;
 }
-h6 {
+.tempLowHighForecast {
   font-size: 0.9rem;
   font-weight: 600;
 }

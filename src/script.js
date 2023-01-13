@@ -40,6 +40,37 @@ showDateAndMonth.innerHTML = ` ${days[today]} ${currentDate} ${months[currentMon
 let showHoursandMinutes = document.querySelector("#currentTime");
 showHoursandMinutes.innerHTML = ` ${time}:${minutes}`;
 
+//Forecast for next week
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecastWholeWeek");
+  let days = ["thu", "fri", "sat", "sun", "mon"];
+  let forecastHTML = `<div class="row">`;
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2">
+      <div class="weekday">${day}</div>
+        <img
+          src="https://ssl.gstatic.com/onebox/weather/48/rain.png"
+          alt=""
+          class=""
+          id=""
+          width="40"
+        />
+      <div class="tempLowHighForecast">
+          <span class="maxStyle">12°</span>
+          <span class="minStyle"> 2°</span>
+      </div>
+    </div>
+    `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 //Gets temperature and City name
 let apiKey = "8e2e3939a15348b12d5c315bd6ba15f3";
 
@@ -96,6 +127,8 @@ function showCelsiusTemperature(event) {
 }
 
 let celsiusTemperature = null;
+
+displayForecast();
 
 let showInput = document.getElementById("search");
 showInput.addEventListener("submit", input);
