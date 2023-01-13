@@ -80,25 +80,31 @@ li {
   text-shadow: 1px 1px 2px #004445;
 }
 
-.card-title {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-#forecastNextWeek {
-  color: #004445;
-  text-align: center;
-}
-
-.card-subtitle {
-  color: #004445 !important;
-}
-
 .fa-solid {
   font-size: 16px;
 }
+/*CSS for forecast. From aComing Up This Week */
+.forecastNextWeek {
+  color: #2c786c;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+h5 {
+  opacity: 0.8;
+}
+h6 {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.maxStyle {
+}
+.minStyle {
+  opacity: 0.6;
+}
 
+/*CSS after forecast*/
 hr {
   color: #faf5e4;
   margin: 30px;
