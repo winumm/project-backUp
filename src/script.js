@@ -41,7 +41,8 @@ let showHoursandMinutes = document.querySelector("#currentTime");
 showHoursandMinutes.innerHTML = ` ${time}:${minutes}`;
 
 //Forecast for next week
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecastWholeWeek");
   let days = ["thu", "fri", "sat", "sun", "mon"];
   let forecastHTML = `<div class="row">`;
@@ -81,6 +82,12 @@ function input(event) {
   axios.get(`${apiUrl}`).then(showTemperatureAndCity);
 }
 
+function getForecast(coordinates) {
+  let appId = "8cac06f7ab6c10287cd06a316ff84a57";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${appId}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function showTemperatureAndCity(response) {
   let cityElement = document.querySelector("#searchedCity");
   cityElement.innerHTML = response.data.name;
@@ -103,6 +110,8 @@ function showTemperatureAndCity(response) {
   );
 
   celsiusTemperature = response.data.main.temp;
+
+  getForecast(response.data.coord);
 }
 
 function whereAmI(position) {
@@ -127,8 +136,6 @@ function showCelsiusTemperature(event) {
 }
 
 let celsiusTemperature = null;
-
-displayForecast();
 
 let showInput = document.getElementById("search");
 showInput.addEventListener("submit", input);
