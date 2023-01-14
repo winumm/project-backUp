@@ -43,26 +43,28 @@ showHoursandMinutes.innerHTML = ` ${time}:${minutes}`;
 //Forecast for next week
 function displayForecast(response) {
   console.log(response.data.daily);
-  let forecastElement = document.querySelector("#forecastWholeWeek");
-  let days = ["thu", "fri", "sat", "sun", "mon"];
-  let forecastHTML = `<div class="row">`;
 
-  days.forEach(function (day) {
+  let forecast = response.data.daily;
+
+  let forecastElement = document.querySelector("#forecastWholeWeek");
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (forecastday) {
     forecastHTML =
       forecastHTML +
       `
     <div class="col-2">
-      <div class="weekday">${day}</div>
+      <div class="weekday">${forecastday.dt}</div>
         <img
-          src="https://ssl.gstatic.com/onebox/weather/48/rain.png"
+          src="https://openweathermap.org/img/wn/${forecastday.weather[0].icon}@2x.png"
           alt=""
           class=""
           id=""
           width="40"
         />
       <div class="tempLowHighForecast">
-          <span class="maxStyle">12°</span>
-          <span class="minStyle"> 2°</span>
+          <span class="maxStyle">${forecastday.temp.max}°</span>
+          <span class="minStyle"> ${forecastday.temp.min}°</span>
       </div>
     </div>
     `;
