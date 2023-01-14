@@ -49,7 +49,7 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecastWholeWeek");
 
   let forecastHTML = `<div class="row">`;
-  days.forEach(function (forecastday) {
+  forecast.forEach(function (forecastday) {
     forecastHTML =
       forecastHTML +
       `
