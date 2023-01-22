@@ -27,18 +27,12 @@ let months = [
 let today = now.getDay();
 let currentDate = now.getDate();
 let currentMonth = now.getMonth();
-let time = now.getHours();
-let minutes = now.getMinutes();
-
-//<span> display current day, current date and Month, hours and minutes
-/*let showToday = document.querySelector("#currentDay");
-showToday.innerHTML = days[today];*/
 
 let showDateAndMonth = document.querySelector("#currentDate");
 showDateAndMonth.innerHTML = ` ${days[today]} ${currentDate} ${months[currentMonth]} `;
 
-let showHoursandMinutes = document.querySelector("#currentTime");
-showHoursandMinutes.innerHTML = ` ${time}:${minutes}`;
+//let showHoursandMinutes = document.querySelector("#currentTime");
+//showHoursandMinutes.innerHTML = ` ${time}:${minutes}`;
 
 //Forecast for next week
 function formatDay(timestamp) {
