@@ -1,18 +1,19 @@
+body {
+  background: hsl(44, 100%, 49%);
+  background-image: url("yellowbackground.jpg");
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+}
+
 .weatherApp {
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
-  border: 1px solid #faf5e4;
+  border: 3px solid #faf5e4;
   border-radius: 5px;
 }
 
-body {
-  background: hsl(44, 100%, 49%);
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 960px;
-}
 .searchButton,
 .locationButton {
   color: #004445 !important;
