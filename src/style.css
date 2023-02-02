@@ -32,7 +32,7 @@ ul {
   display: block;
   text-align: left;
   color: #faf5e4;
-  font-size: 14px;
+  font-size: 16px;
 
   list-style-type: none;
   margin-top: 10px;
@@ -41,6 +41,11 @@ ul {
 }
 li {
   padding-bottom: 3px;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
 }
 
 #icon {
@@ -64,7 +69,7 @@ li {
 
 #searchedCity {
   position: relative;
-  margin-top: 50px;
+
   font-family: "Monoton", cursive;
   font-weight: 500;
   font-size: 50px;
@@ -99,21 +104,15 @@ li {
   opacity: 0.8;
 }
 .tempLowHighForecast {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
 }
-.maxStyle {
-}
+
 .minStyle {
   opacity: 0.6;
 }
 
 /*CSS after forecast*/
-hr {
-  color: #faf5e4;
-  margin: 30px;
-  opacity: 1;
-}
 
 .credits {
   color: #faf5e4;

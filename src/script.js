@@ -131,9 +131,11 @@ function whereAmI(position) {
 let showInput = document.getElementById("search");
 showInput.addEventListener("submit", input);
 
-let myLocation = document.getElementById("locationButtonId");
-console.log(locationButtonId);
-myLocation.addEventListener(
-  "click",
-  navigator.geolocation.getCurrentPosition(whereAmI)
-);
+function hereIAm() {
+  navigator.geolocation.getCurrentPosition(whereAmI);
+}
+
+let myLocation = document.getElementById(`locationButtonId`);
+myLocation.addEventListener("click", hereIAm);
+
+hereIAm();
